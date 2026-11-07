@@ -1,0 +1,36 @@
+.dashboard__content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+.dashboard__board {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+
+.dashboard__title {
+  font-size: 1.75rem;
+}
+
+.dashboard__loading {
+  color: var(--muted);
+}
+
+.dashboard__side {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (min-width: 1080px) {
+  .dashboard__content {
+    grid-template-columns: minmax(0, 1fr) 360px;
+    align-items: start;
+  }
+}

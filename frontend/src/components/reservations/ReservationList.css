@@ -1,0 +1,67 @@
+.reservations {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.reservations__title {
+  font-size: 1.25rem;
+}
+
+.reservations__empty {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+.reservations__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ticket {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.ticket__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ticket__room {
+  font-weight: 600;
+}
+
+.ticket__date {
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.ticket__time {
+  font-variant-numeric: tabular-nums;
+  font-size: 0.9375rem;
+}
+
+.ticket__actions {
+  display: flex;
+  gap: 8px;
+}
+
+.ticket__status {
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
